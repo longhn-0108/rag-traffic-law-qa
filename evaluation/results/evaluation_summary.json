@@ -1,0 +1,38 @@
+{
+  "evaluation_snapshot": {
+    "qa_count": 400,
+    "corpus_chunks": 1452,
+    "retrieval_top_k": 10,
+    "retrieval_mode": "weighted_rrf_vector_bm25_rerank",
+    "embedding_model": "BAAI/bge-m3",
+    "llm_model": "qwen2.5:7b"
+  },
+  "retrieval": {
+    "hybrid_rrf": {
+      "hit@1": 0.535,
+      "hit@3": 0.7275,
+      "hit@5": 0.795,
+      "mrr@5": 0.6437619047619049,
+      "retrieval_time_seconds": 2.1236648774976494
+    },
+    "vector_only": {
+      "hit@1": 0.4425,
+      "hit@3": 0.625,
+      "hit@5": 0.6725,
+      "mrr@5": 0.5491874999999998,
+      "retrieval_time_seconds": 0.036446848497726024
+    },
+    "bm25_only": {
+      "hit@1": 0.16,
+      "hit@3": 0.29,
+      "hit@5": 0.3375,
+      "mrr@5": 0.24472123015873015,
+      "retrieval_time_seconds": 0.008261336249124724
+    }
+  },
+  "ragas_snapshot": {
+    "faithfulness": 0.35466666666666663,
+    "answer_correctness": 0.4670018433448612
+  },
+  "note": "Metrics are a snapshot of the team's existing benchmark artifacts included in the source archive; rerun after changing data, models, prompts, or retrieval settings."
+}

@@ -1,0 +1,7 @@
+-r requirements.txt
+datasets>=3.0
+langchain-huggingface>=0.1
+langchain-openai>=0.2
+pandas>=2.2
+pyarrow>=17.0
+ragas>=0.2
